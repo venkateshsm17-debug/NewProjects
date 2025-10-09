@@ -23,10 +23,10 @@ public class PageObjectExample {
 	@FindBy(name = "password")
 	WebElement ele2;
 
-	/*
-	 * PageObjectExample(WebDriver driver) { this.driver=driver;
-	 * PageFactory.initElements(driver, this); }
-	 */
+	
+	  PageObjectExample(WebDriver driver) { this.driver=driver;
+	  PageFactory.initElements(driver, this); }
+	 
 
 	public void enterCredential(String username, String password) {
 		/*

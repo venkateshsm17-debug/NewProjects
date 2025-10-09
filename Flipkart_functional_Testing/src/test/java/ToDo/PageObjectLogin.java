@@ -35,8 +35,9 @@ public class PageObjectLogin {
 	@Test
 	void loginCredentials() throws InterruptedException {
 		
-		PageObjectExample pg= PageFactory.initElements(driver,PageObjectExample.class );
-		 // PageObjectExample pg= new PageObjectExample(driver);
+		//PageObjectExample pg= PageFactory.initElements(driver,PageObjectExample.class );
+		  PageObjectExample pg= new PageObjectExample(driver);
+		  
 		String username= prop.getProperty("username");
 		String password= prop.getProperty("password");
 		  pg.enterCredential(username,password);
